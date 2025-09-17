@@ -32,6 +32,24 @@ A web application that displays multiple subreddit threads in a TweetDeck-like i
 
     The application will be available at `http://localhost:3000`.
 
+## Docker
+
+To run the application in a Docker container, follow these steps:
+
+1.  **Build the Docker image:**
+
+    ```bash
+    docker build -t paralleddit .
+    ```
+
+2.  **Run the Docker container:**
+
+    ```bash
+    docker run -p 18180:3000 paralleddit
+    ```
+
+    The application will be available at `http://localhost:18180`.
+
 ## Configuration
 
 To change the subreddits displayed in the application, modify the `subredditUrls` array in `nuxt.config.ts`.
